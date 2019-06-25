@@ -1,3 +1,6 @@
+$font: sans-serif, Verdana, Geneva, Tahoma;
+$font-color: black;
+
 body {
     margin: 0;
     background: white;
@@ -14,13 +17,14 @@ body {
     display: flex;
     justify-content: space-between;
     span{
-    font-family: sans-serif, Verdana, Geneva, Tahoma;
+    font-family: font;
     font-size: 25px;
     font-weight: bolder;
-    color: black;
+    color: $font-color;
     padding-top: 5px;
     }
   }
+
   .sigh_up::before{
     content: url(login.png);
     padding: 0 10px;
@@ -29,5 +33,26 @@ body {
   .sigh_in::before{
     content: url("https://img.icons8.com/material/24/000000/key.png");
     padding: 0 10px;
+  }
+
+  navbar {
+    display: flex;
+    justify-content: flex-end;
+    ul {
+      display: flex;
+      flex-direction: row;
+      li {
+        padding: 5px 10px;
+        list-style-type: none;
+        font-family: $font;
+        color: $font-color;
+      }
+    }
+
+    ul::after{
+      content: url(close_1.png);
+      padding-left: 15px;
+      padding-right: 10px;
+    }
   }
   
