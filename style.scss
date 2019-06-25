@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    background: white;
+  }
+
+  .content {
+    margin: 0 auto;
+    background: aqua;
+    /*height: 605px;*/
+    width: 900px;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    span{
+    font-family: sans-serif, Verdana, Geneva, Tahoma;
+    font-size: 25px;
+    font-weight: bolder;
+    color: black;
+    padding-top: 5px;
+    }
+  }
+  .sigh_up::before{
+    content: url(login.png);
+    padding: 0 10px;
+  }
+
+  .sigh_in::before{
+    content: url("https://img.icons8.com/material/24/000000/key.png");
+    padding: 0 10px;
+  }
+  
