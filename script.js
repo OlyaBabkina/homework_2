@@ -1,10 +1,28 @@
-window.onload = () =>{
-     $("#navbar").hide();
-};
-function menu(){
-    $("#navbar").show();
-    $('#menu_button').attr('src', 'close_1.png');
+var image;
+var flag;
+
+function Show_menu(){
+    image = document.getElementById('menu_button');
+    $("#navbar").show('slow');
+    image.src = 'close_1.png';
+    flag = false;
 }
 
+function Hide_menu(){
+    image = document.getElementById('menu_button');
+    $("#navbar").hide();
+    image.src = 'menu.png';
+    flag = true;
+}
+
+window.onload = () =>{
+    Hide_menu();
+};
+function menu(e){
+    if(flag == true)
+        Show_menu();
+    else
+        Hide_menu();   
+}
 
 

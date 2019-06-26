@@ -34,7 +34,7 @@ navbar {
     display: flex;
     flex-direction: row; }
     navbar ul li {
-      padding: 0 10px;
+      padding: 0 15px;
       list-style-type: none;
       font-family: sans-serif, Verdana, Geneva, Tahoma;
       color: black; }
