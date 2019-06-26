@@ -38,21 +38,19 @@ body {
   navbar {
     display: flex;
     justify-content: flex-end;
+    flex-direction: row;
     ul {
       display: flex;
       flex-direction: row;
       li {
-        padding: 5px 10px;
+        padding: 0 10px;
         list-style-type: none;
         font-family: $font;
         color: $font-color;
       }
     }
-
-    ul::after{
-      content: url(close_1.png);
-      padding-left: 15px;
-      padding-right: 10px;
+    div{
+      margin-top: 10px;
     }
   }
   

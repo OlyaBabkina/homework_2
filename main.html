@@ -3,6 +3,8 @@
     <meta charset = "utf-8">
     <title>Landing</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src = "script.js"></script>
+    <script src = "https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 <body>
     <div class = "content">
@@ -14,13 +16,14 @@
             </div>
         </header>
         <navbar>
-            <ul>
+            <ul id = "navbar">
                 <li>Features</li>
                 <li>Reviews</li>
                 <li>Pricing</li>
                 <li>Demo</li>
                 <li>Contact</li>
             </ul>
+            <div id = "menu_button" onclick="menu()"><img src="menu.png"></div>
         </navbar>
         <div></div>
     </div>
