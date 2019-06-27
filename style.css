@@ -29,7 +29,8 @@ header {
 navbar {
   display: flex;
   justify-content: flex-end;
-  flex-direction: row; }
+  flex-direction: row;
+  height: 50px; }
   navbar ul {
     display: flex;
     flex-direction: row; }
@@ -40,5 +41,48 @@ navbar {
       color: black; }
   navbar div {
     margin-top: 10px; }
+
+.first_page {
+  margin-top: 35px; }
+  .first_page span, .first_page h1 {
+    display: flex;
+    justify-content: center;
+    font-family: font;
+    margin: 0; }
+  .first_page div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; }
+    .first_page div div {
+      display: flex;
+      flex-flow: row;
+      margin-top: 55px;
+      margin-left: 20px; }
+      .first_page div div div {
+        position: absolute;
+        margin-top: 85px;
+        margin-left: 105px; }
+    .first_page div div {
+      width: 420px;
+      display: flex;
+      flex-flow: column; }
+      .first_page div div span {
+        display: flex;
+        justify-content: flex-end;
+        margin-left: 55px; }
+      .first_page div div button {
+        margin: 30px auto;
+        margin-bottom: 10px;
+        width: 155px;
+        font-family: sans-serif, Verdana, Geneva, Tahoma;
+        color: black;
+        background-color: white; }
+      .first_page div div label {
+        margin: 0 auto;
+        font-family: font;
+        color: font-color;
+        font-size: 15px;
+        width: 100px;
+        text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

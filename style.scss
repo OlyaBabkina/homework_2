@@ -39,6 +39,7 @@ body {
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
+    height: 50px;
     ul {
       display: flex;
       flex-direction: row;
@@ -54,3 +55,57 @@ body {
     }
   }
   
+  .first_page{
+    margin-top: 35px;
+    span, h1{
+      display: flex;
+      justify-content: center;
+      font-family: font;
+      margin: 0;
+    }
+    div{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      div{
+        display: flex;
+        flex-flow: row;
+        margin-top: 55px;
+        margin-left: 20px;
+        div{
+          position: absolute;
+          margin-top: 85px;
+          margin-left: 105px; 
+        }
+      }
+      div{ 
+        width: 420px;
+        display: flex;
+        flex-flow: column;
+        span{
+        display: flex;
+        justify-content: flex-end;
+        margin-left: 55px;}
+        button{
+          margin: 30px auto;
+          margin-bottom: 10px;
+          width: 155px;
+          font-family: $font;
+          color: $font-color;
+          background-color: white;
+        }
+        label{
+          margin: 0 auto;
+          font-family: font;
+          color: font-color;
+          font-size: 15px;
+          width: 100px;
+          text-align: center;
+        }
+
+
+      }
+       
+    }
+    
+  }
