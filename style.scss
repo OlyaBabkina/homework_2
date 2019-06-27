@@ -3,12 +3,11 @@ $font-color: black;
 
 body {
     margin: 0;
-    background: white;
+    background: linear-gradient(to bottom, #7CFC00, #FFD700);
   }
 
   .content {
     margin: 0 auto;
-    background: aqua;
     /*height: 605px;*/
     width: 900px;
   }
@@ -56,8 +55,8 @@ body {
   }
   
   .first_page{
-    margin-top: 35px;
-    span, h1{
+    margin-top: 25px;
+    span, h1, .scroll{
       display: flex;
       justify-content: center;
       font-family: font;
@@ -102,10 +101,6 @@ body {
           width: 100px;
           text-align: center;
         }
-
-
-      }
-       
+      }  
     }
-    
   }
