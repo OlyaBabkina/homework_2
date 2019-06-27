@@ -4,14 +4,14 @@ var flag;
 function Show_menu(){
     image = document.getElementById('menu_button');
     $("#navbar").show('slow');
-    image.src = 'close_1.png';
+    image.src = 'img/close_1.png';
     flag = false;
 }
 
 function Hide_menu(){
     image = document.getElementById('menu_button');
     $("#navbar").hide();
-    image.src = 'menu.png';
+    image.src = 'img/menu.png';
     flag = true;
 }
 
