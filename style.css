@@ -2,28 +2,28 @@ body {
   margin: 0;
   background: linear-gradient(to bottom, #7CFC00, #FFD700); }
 
-.content {
+.content_of_first_page {
   margin: 0 auto;
-  /*height: 605px;*/
   width: 900px; }
 
 header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between; }
   header span {
     font-family: font;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bolder;
     color: black;
     padding-top: 5px; }
 
 .sigh_up::before {
-  content: url(login.png);
-  padding: 0 10px; }
+  content: url(img/login.png);
+  padding: 0 5px; }
 
 .sigh_in::before {
   content: url("https://img.icons8.com/material/24/000000/key.png");
-  padding: 0 10px; }
+  padding: 0 5px; }
 
 navbar {
   display: flex;
@@ -34,19 +34,19 @@ navbar {
     display: flex;
     flex-direction: row; }
     navbar ul li {
-      padding: 0 15px;
+      padding: 5px 15px;
       list-style-type: none;
       font-family: sans-serif, Verdana, Geneva, Tahoma;
       color: black; }
   navbar div {
-    margin-top: 10px; }
+    margin-top: 5px; }
 
 .first_page {
-  margin-top: 25px; }
+  margin-top: 15px; }
   .first_page span, .first_page h1, .first_page .scroll {
     display: flex;
     justify-content: center;
-    font-family: font;
+    font-family: sans-serif, Verdana, Geneva, Tahoma;
     margin: 0; }
   .first_page div {
     display: flex;
@@ -55,22 +55,23 @@ navbar {
     .first_page div div {
       display: flex;
       flex-flow: row;
-      margin-top: 55px;
+      margin-top: 30px;
       margin-left: 20px; }
       .first_page div div div {
         position: absolute;
         margin-top: 85px;
         margin-left: 105px; }
     .first_page div div {
-      width: 420px;
+      width: 430px;
       display: flex;
       flex-flow: column; }
       .first_page div div span {
         display: flex;
         justify-content: flex-end;
-        margin-left: 55px; }
+        margin-left: 55px;
+        font-size: 15px; }
       .first_page div div button {
-        margin: 30px auto;
+        margin: 10px auto;
         margin-bottom: 10px;
         width: 155px;
         font-family: sans-serif, Verdana, Geneva, Tahoma;
@@ -81,7 +82,103 @@ navbar {
         font-family: font;
         color: font-color;
         font-size: 15px;
-        width: 100px;
+        width: 300px;
         text-align: center; }
+  .first_page .scroll {
+    width: 100px;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column; }
+
+.content_of_others_pages {
+  margin: 10px 0 0 0;
+  background: white; }
+  .content_of_others_pages .other_pages {
+    width: 900px;
+    padding-top: 105px;
+    margin: 0 auto; }
+    .content_of_others_pages .other_pages span, .content_of_others_pages .other_pages h1 {
+      display: flex;
+      justify-content: center;
+      font-family: sans-serif, Verdana, Geneva, Tahoma;
+      margin: 0; }
+    .content_of_others_pages .other_pages .benefits {
+      display: flex;
+      flex-flow: row nowrap; }
+      .content_of_others_pages .other_pages .benefits div {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        margin: 0 30px;
+        margin-top: 30px;
+        width: 250px;
+        padding: 0 40px; }
+    .content_of_others_pages .other_pages .vertical_slider {
+      margin-top: 130px;
+      display: flex;
+      flex-flow: row nowrap; }
+      .content_of_others_pages .other_pages .vertical_slider .container, .content_of_others_pages .other_pages .vertical_slider .carousel-item {
+        height: auto;
+        width: 60%; }
+      .content_of_others_pages .other_pages .vertical_slider .carousel-control-next {
+        margin-right: 260px; }
+      .content_of_others_pages .other_pages .vertical_slider .vert .carousel-item-next.carousel-item-left,
+      .content_of_others_pages .other_pages .vertical_slider .vert .carousel-item-prev.carousel-item-right {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: 0, 0, 0; }
+      .content_of_others_pages .other_pages .vertical_slider .vert .carousel-item-next,
+      .content_of_others_pages .other_pages .vertical_slider .vert .active.carousel-item-right {
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100% 0); }
+      .content_of_others_pages .other_pages .vertical_slider .vert .carousel-item-prev,
+      .content_of_others_pages .other_pages .vertical_slider .vert .active.carousel-item-left {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0); }
+      .content_of_others_pages .other_pages .vertical_slider div {
+        width: 700px; }
+      .content_of_others_pages .other_pages .vertical_slider #lorem {
+        width: 400px;
+        margin-top: 15px; }
+        .content_of_others_pages .other_pages .vertical_slider #lorem ul {
+          margin-top: 15px; }
+
+.gallery_list {
+  margin-top: 130px;
+  display: flex;
+  flex-direction: row; }
+  .gallery_list div {
+    flex-direction: row;
+    margin: 2px 0; }
+
+.horisontal_slider {
+  margin-top: 130px; }
+  .horisontal_slider span, .horisontal_slider h1 {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif, Verdana, Geneva, Tahoma;
+    margin: 0; }
+
+footer {
+  margin: 0;
+  background: white;
+  padding-top: 130px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around; }
+  footer .privacy {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; }
+  footer .subscribe {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 500px;
+    padding: 10px;
+    margin: 0 auto; }
+    footer .subscribe .input-group {
+      margin-top: 15px; }
 
 /*# sourceMappingURL=style.css.map */

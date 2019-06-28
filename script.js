@@ -17,7 +17,9 @@ function Hide_menu(){
 
 window.onload = () =>{
     Hide_menu();
+    $('.carousel').carousel()
 };
+
 function menu(e){
     if(flag == true)
         Show_menu();
@@ -25,4 +27,11 @@ function menu(e){
         Hide_menu();   
 }
 
+function scroll_tobottom(){
+    var button = document.getElementsByClassName("scroll");
+    var scroll_element = document.getElementsByClassName("other_pages");
+    $([button, document.body]).animate({
+        scrollTop: $(scroll_element).offset().top
+    }, 2000);
+}
 
