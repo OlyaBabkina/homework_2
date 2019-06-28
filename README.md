@@ -1,2 +1,2 @@
 Запись работы проекта:
-(https://giphy.com/gifs/U3foubO7TqfAOAF2IR/html5)
+(https://media.giphy.com/media/U3foubO7TqfAOAF2IR/giphy.gif)
